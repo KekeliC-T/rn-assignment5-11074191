@@ -1,0 +1,158 @@
+# Theme Switcher App
+
+This is a simple React Native application built using Expo. The app includes four main screens: Home, My Cards, Statistics, and Settings. The Settings screen allows the user to toggle between light and dark themes.
+
+## Features
+
+- **Home Screen**: Displays a user's credit card information and recent transactions.
+- **My Cards Screen**: Placeholder screen to display user's cards.
+- **Statistics Screen**: Placeholder screen to display statistics.
+- **Settings Screen**: Allows the user to toggle between light and dark themes.
+- **Theme Toggle**: Switch between light and dark themes seamlessly.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/KekeliC-T/rn-assignment5-11074191
+   cd rn-assignment5-11074191
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the project:**
+   ```bash
+   expo start
+   ```
+
+## File Structure
+
+```
+/your-project
+  /assets
+      home.png
+      my_cards.png
+      statistics.png
+      settings.png
+      apple_store.png
+      spotify.png
+      money_transfer.png
+      grocery.png
+  /screens
+    HomeScreen.js
+    MyCardsScreen.js
+    StatisticsScreen.js
+    SettingsScreen.js
+  ThemeContext.js
+  /components
+    Actionicon.js
+    Card.js
+    Transactionitem.js
+  /context
+    ThemeContext.js
+  /navigation
+    BottomTabNavigation.js
+  App.js
+```
+
+## Screens
+
+### HomeScreen.js
+
+Displays the user's credit card information and recent transactions. The screen updates its style based on the current theme.
+
+### MyCardsScreen.js
+
+A placeholder screen that will display the user's cards. The screen updates its style based on the current theme.
+
+### StatisticsScreen.js
+
+A placeholder screen that will display the user's statistics. The screen updates its style based on the current theme.
+
+### SettingsScreen.js
+
+Allows the user to toggle between light and dark themes.
+
+### ThemeContext.js
+
+Contains the context and provider for managing the theme state.
+
+### App.js
+
+The main entry point of the application. It sets up the bottom tab navigator and integrates the ThemeProvider.
+
+## How to Use
+
+1. **Run the application**:
+
+   ```bash
+   expo start
+   ```
+
+2. **Navigate between screens** using the bottom tab navigator.
+
+3. **Toggle between light and dark themes** by navigating to the Settings screen and using the theme switch.
+
+## Dependencies
+
+- **React Navigation**: For navigation between screens.
+- **Expo**: For easy setup and development.
+- **React Native**: The framework for building native apps.
+
+## How the Application Was Built
+
+1. **Setting Up Expo**: The project was initialized using Expo CLI, which simplifies the setup process and provides a smooth development experience.
+
+   ```bash
+   expo init ThemeSwitcherApp
+   cd ThemeSwitcherApp
+   ```
+
+2. **Installing Dependencies**: Required dependencies such as React Navigation were installed to handle navigation between screens.
+
+   ```bash
+   npm install @react-navigation/native @react-navigation/bottom-tabs
+   npm install react-native-screens react-native-safe-area-context
+   ```
+
+3. **Creating Screens**: Four main screens were created (Home, My Cards, Statistics, Settings) each as a separate component under the `screens` directory.
+
+4. **Implementing Theme Context**: A `ThemeContext` was created to manage light and dark themes across the app.
+
+5. **Adding Navigation**: The bottom tab navigator was set up in `App.js` to allow navigation between the different screens.
+
+6. **Styling and Theming**: The screens were styled to match the provided UI design, and theme toggling was implemented to switch between light and dark themes.
+
+7. **Testing and Debugging**: The app was tested on both iOS and Android simulators to ensure compatibility and functionality.
+
+## Screenshots
+
+![Home](HC.jpg)
+![My Cards](MC.jpg)
+[Statistics](SC.jpg)
+
+## Troubleshooting
+
+- **Bundling Issues**: Ensure that the paths to image assets are correct and match the file structure.
+- **Theme Context Issues**: Ensure that `ThemeContext.js` is properly exported and imported.
+
+## Contribution
+
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Feel free to customize this README file according to your project's specifics and requirements.
